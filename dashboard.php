@@ -7,3 +7,11 @@ if(!$_SESSION['login']){
 echo "Hi ", $_SESSION['username'];
 ?>
 <a href="logout.php">Logout</a>
+
+<?php 
+
+if(isset($_SESSION['userimage'])){
+?>
+<img src="<?=$_SESSION['userimage'] ?>">
+
+<?php } ?>
